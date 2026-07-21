@@ -134,8 +134,25 @@
 // ! B Part2
 
 // ? B.1
+/*
+ ! First forEach
+ * 1. Is a method to use in array only to loop on it 
+ * 2. can`t stop this loop early
+ * 3. depended on callback function
+ * 4. used in ES6
+ *  
+ * Use it when you want to perform an action on all elements.
+ ! Secoundary for...Of
+ * 1. Can use with any iterable such as "String , array"
+ * 2. can stop this loop in progress
+ * 3. depended on loop
+ * 4. old school before ES6
+ * 
+ * Use it when you need more control over the loop or asynchronous operations.
+*/
 
 // ? B.2
+// * TDZ =>  This concept is more commonly used with "let" and "const" when calling a value before creating it.
 // function calc(b = a, a = 5) {
 //   return console.log(a + b);
 // }
@@ -145,13 +162,16 @@
 /*
  * difference between == and ===
  * this == compare value to value
- * this=== compaier value and type to other value and type
+ * this === compaier value and type to other value and type
  */
 
 // ? B.4
+// * How to works => try...catch is used to handle errors in JavaScript. The code inside the try block is executed first. If an error occurs, execution stops in the try block and the catch block handles the error instead of crashing the program.
+
+// * Why important in async operations => try...catch is important when using async/await because it catches errors from rejected promises. This allows the application to handle failures gracefully, such as displaying an error message or retrying the operation, instead of crashing.
 
 // ? B.5
-/*
- * type conversion : this convert or transform type by me
- * type coercion : this convert or transform type without me by js
- */
+
+//  * type conversion : this convert or transform type by me
+
+//  * type coercion : this convert or transform type without me by js
